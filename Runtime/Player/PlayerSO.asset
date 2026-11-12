@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46720256324a9e9468688e8763787415, type: 3}
+  m_Name: PlayerSO
+  m_EditorClassIdentifier: Assembly-CSharp::GameFramework.Actors.PlayerSO
+  <GroundedData>k__BackingField:
+    BaseMoveSpeed: 5
+    WalkSpeedMultiplier: 0.3
+    SprintSpeedMultiplier: 1.5
+    Acceleration: 10
+    Deceleration: 15
+    SlopeSpeedAngles:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 30
+        value: 0.9
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 45
+        value: 0.7
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 60
+        value: 0.3
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    RotationData:
+      <TargetRotationReachTime>k__BackingField: {x: 0, y: 1, z: 0}
+    HeavyLandSpeedThreshold: -10
+    HeavyLandAnim: Land_Heavy
+    HeavyLandLockDuration: 0.6
+    MediumLandSpeedThreshold: -6
+    MediumLandAnim: Land_Medium
+    LightLandSpeedThreshold: -2
+    LightLandAnim: Land_Light
+    HeavyRollAnim: Roll_Forward
+    HeavyRollLockDuration: 0.8
+    HeavyStopSpeedThreshold: 7
+    HeavyStopAnim: Stop_Heavy
+    HeavyStopLockDuration: 0.35
+    HeavyStopDeceleration: 15
+    MediumStopSpeedThreshold: 4
+    MediumStopAnim: Stop_Medium
+    LocomotionAnim: Locomotion
+  <AirborneData>k__BackingField:
+    Acceleration: 5
+    Deceleration: 1
+    <JumpData>k__BackingField:
+      <JumpStartForce>k__BackingField: {x: 0, y: 0, z: 0}
+      canMovementInTheAir: 0
+      <SpeedModifier>k__BackingField: 1
+      <JumpToGroundRayDistance>k__BackingField: 2
+      <JumpForceModifierOnSlopeUpwards>k__BackingField:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      <JumpForceModifierOnSlopeDownwards>k__BackingField:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      <RotationData>k__BackingField:
+        <TargetRotationReachTime>k__BackingField: {x: 0, y: 0, z: 0}
+      <StationaryForce>k__BackingField: {x: 0, y: 0, z: 0}
+      <WeakForce>k__BackingField: {x: 0, y: 0, z: 0}
+      <MediumForce>k__BackingField: {x: 0, y: 0, z: 0}
+      <StrongForce>k__BackingField: {x: 0, y: 0, z: 0}
+      <DecelerationForce>k__BackingField: 1.5
+    <FallData>k__BackingField:
+      canMovementInTheAir: 0
+      <SpeedModifier>k__BackingField: 1
+      <FallSpeedLimit>k__BackingField: 35
+      <MinimumDistanceToBeConsideredHardFall>k__BackingField: 3
+    <GlideData>k__BackingField:
+      GlideFallSpeedLimit: 2
+      SpeedModifier: 1.2
+      Acceleration: 8
+      Deceleration: 2
+  <SwimmingData>k__BackingField:
+    _speedModifier: 0.5
+    SprintSpeedModifier: 0.8
+    Acceleration: 3
+    Deceleration: 20
+    _maxSinkSpeed: 2
+    _buoyancyForce: 0
+    SurfaceSwimAnim: Swim_Surface
+    UnderwaterSwimAnim: Swim_Underwater

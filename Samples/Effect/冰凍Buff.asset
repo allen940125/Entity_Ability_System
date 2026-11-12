@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ad79ce544025942b4467c90dcdf9dd, type: 3}
+  m_Name: "\u51B0\u51CDBuff"
+  m_EditorClassIdentifier: Assembly-CSharp::BuffBlueprintSO
+  buffName: 
+  duration: 5
+  isDebuff: 0
+  stackBehavior: 1
+  maxStacks: 1
+  modifyAttribute: 0
+  attributeMods: []
+  stateTagToApply: 1024
+  isPeriodic: 0
+  tickInterval: 1
+  tickScaleMode: 0
+  tickMultiplier: 5
+  isDamage: 1
