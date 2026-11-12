@@ -1,0 +1,10 @@
+{
+  "name": "com.yourname.git-tool",
+  "version": "1.0.0",
+  "displayName": "My Git Tool",
+  "description": "自製 Unity Git 輔助工具",
+  "unity": "2022.3",
+  "author": {
+    "name": "YourName"
+  }
+}
